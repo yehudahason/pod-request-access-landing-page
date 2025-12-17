@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Pod request access landing page</title>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main class="main">
@@ -32,12 +33,18 @@
           <img src="./assets/desktop/pocket-casts.svg" alt="" />
         </div>
 
-        <form action="">
+        <form id="accessForm" novalidate>
           <div class="input">
-            <input type="email" placeholder="Email address" />
-            <button class="btn">Request access</button>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <button class="btn" type="submit">Request access</button>
           </div>
         </form>
+        <p id="toast"></p>
       </section>
       <section class="hero">
         <div class="img-src" alt=""></div>

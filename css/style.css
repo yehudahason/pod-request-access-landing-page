@@ -17,7 +17,9 @@ html {
   --text2: 300 18px/1.5 "Chivo";
   --text2m: 300 14px/1.5 "Chivo";
   --text3: 700 14px/2 "Chivo";
+  --text4: 700 12px "Chivo";
   --green: #54e6af;
+  --greenhover: #8dfed3;
 
   --blue-950: rgb(18, 23, 37);
   --blue-900: #2c344b;
@@ -88,6 +90,11 @@ h1 span {
   color: var(--blue-300);
 }
 
+#toast {
+  margin-top: -28px;
+  font: var(--text4);
+  color: red;
+}
 form {
   width: 95%;
   margin: 10px 20px;
@@ -108,6 +115,7 @@ form .input {
   padding: 5px 28px;
   background-color: var(--blue-900);
   border: none;
+  color: var(--white);
 }
 .input .btn {
   height: 44px;
@@ -117,6 +125,13 @@ form .input {
   font: var(--text3);
 }
 
+.input .btn:hover {
+  background-color: var(--greenhover);
+}
+.input.active input {
+  outline: none;
+  border: 2px solid red;
+}
 .icons {
   width: clamp(280px, 90vw, 400px);
 
@@ -147,6 +162,14 @@ form .input {
     left: 44px;
     top: 156px;
     z-index: 4;
+  }
+  .dots {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 815px;
+    z-index: 4;
+    right: -122px;
   }
   .hero {
     display: block;
@@ -192,10 +215,20 @@ form .input {
     align-items: center;
     width: 448px;
     height: 52px;
+    overflow: hidden;
+    padding: 2px;
   }
   .input input {
     width: 50%;
     border: none;
+    border-radius: 0;
+  }
+  .input.active input {
+    border: none;
+  }
+
+  .input.active {
+    border: 2px solid red;
   }
   .input input:focus {
     outline: none;
@@ -203,14 +236,21 @@ form .input {
   .input .btn {
     width: 50%;
   }
+
+  #toast {
+    margin: -68px auto 0 20px;
+    font: var(--text4);
+    color: red;
+  }
   .icons {
     position: absolute;
     top: 523px;
-    transform: translateX(55px);
+    transform: translateX(79px);
+    gap: 41px;
   }
   .icons img {
     max-height: 30px;
-    max-width: 130px;
+    max-width: 150px;
   }
 }
 
@@ -251,7 +291,11 @@ form .input {
     padding-right: 217px;
   }
   .icons {
-    top: 450px;
+    top: 471px;
     z-index: 5;
+  }
+  .dots {
+    right: 0;
+    top: 757px;
   }
 }
