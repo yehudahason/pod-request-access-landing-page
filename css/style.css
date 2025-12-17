@@ -51,7 +51,8 @@ body {
   gap: 100px;
   flex-direction: column;
   padding: 36px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .logo {
