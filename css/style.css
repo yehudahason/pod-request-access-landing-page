@@ -201,7 +201,7 @@ form .input {
     left: 44px;
   }
   .content h1 {
-    margin-top: 20px;
+    margin-top: 0;
     font: var(--text1);
   }
   .content p {
