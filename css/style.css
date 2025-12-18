@@ -169,7 +169,7 @@ form .input {
     display: block;
     position: absolute;
     right: 0;
-    top: 815px;
+    top: 782px;
     z-index: 4;
     right: -122px;
   }
@@ -177,7 +177,7 @@ form .input {
     display: block;
     position: absolute;
     width: 491px;
-    height: 868px;
+    height: 835px;
     top: 0;
     right: -31px;
     z-index: 2;
@@ -192,7 +192,7 @@ form .input {
     position: absolute;
     background-color: var(--blue-950);
     z-index: 3;
-    top: 317px;
+    top: 284px;
     width: 592px;
     height: 552px;
     align-items: flex-start;
