@@ -34,14 +34,15 @@ body {
   background: url("../assets/mobile/image-host.jpg") center / cover no-repeat;
   /* background-size: 100% 100%; */
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 /* Mobile First */
 
 .main {
+  margin: auto;
   background: rgba(18, 23, 37, 0.8);
   min-height: 100vh;
   width: 100%;
@@ -150,6 +151,7 @@ form .input {
 @media (min-width: 768px) {
   body {
     background-color: var(--blue-950);
+    background-image: none;
   }
   .main {
     position: relative;
@@ -192,7 +194,8 @@ form .input {
     z-index: 3;
     top: 317px;
     width: 592px;
-    height: 552px;
+    min-height: 552px;
+    height: auto;
     align-items: flex-start;
     text-align: left;
     padding-right: 140px;
@@ -256,7 +259,6 @@ form .input {
 
 @media (min-width: 1200px) {
   body {
-    background-image: none;
     background-color: var(--blue-950);
   }
 
@@ -283,7 +285,8 @@ form .input {
     left: 160px;
     top: 314px;
     width: 736px;
-    height: 494px;
+    min-height: 494px;
+    height: auto;
     padding-right: 71px;
   }
 
