@@ -192,9 +192,9 @@ form .input {
     position: absolute;
     background-color: var(--blue-950);
     z-index: 3;
-    top: 284px;
+    top: 275px;
     width: 592px;
-    height: 552px;
+    height: 564px;
     align-items: flex-start;
     text-align: left;
     padding-right: 140px;
@@ -212,18 +212,20 @@ form .input {
     margin-left: 0;
   }
   form .input {
+    margin-top: -12px;
     flex-direction: row;
     background-color: var(--blue-900);
     align-items: center;
     width: 448px;
-    height: 52px;
+    height: 59px;
     overflow: hidden;
     padding: 2px;
+    border-radius: 30px;
   }
   .input input {
     width: 50%;
     border: none;
-    border-radius: 0;
+    border-radius: 30px;
   }
   .input.active input {
     border: none;
@@ -237,16 +239,18 @@ form .input {
   }
   .input .btn {
     width: 50%;
+    height: 50px;
+    border-radius: 30px;
   }
 
   #toast {
-    margin: -68px auto 0 20px;
+    margin: -70px auto 0 25px;
     font: var(--text4);
     color: red;
   }
   .icons {
     position: absolute;
-    top: 523px;
+    top: 535px;
     transform: translateX(79px);
     gap: 41px;
   }
@@ -282,9 +286,9 @@ form .input {
   .main .content {
     position: absolute;
     left: 160px;
-    top: 281px;
+    top: 275px;
     width: 736px;
-    height: 494px;
+    height: 500px;
     padding-right: 71px;
   }
 
