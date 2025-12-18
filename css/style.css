@@ -296,7 +296,7 @@ form .input {
     z-index: 5;
   }
   .dots {
-    right: 0;
+    right: 10px;
     top: 757px;
   }
 }
