@@ -206,13 +206,14 @@ form .input {
   }
   .content p {
     font: var(--text2);
+    margin-bottom: 30px;
   }
 
   form {
     margin-left: 0;
   }
   form .input {
-    margin-top: -12px;
+    margin-top: -30px;
     flex-direction: row;
     background-color: var(--blue-900);
     align-items: center;
@@ -244,7 +245,7 @@ form .input {
   }
 
   #toast {
-    margin: -70px auto 0 25px;
+    margin: -89px auto 0 25px;
     font: var(--text4);
     color: red;
   }
