@@ -1,6 +1,6 @@
 # Frontend Mentor - Pod request access landing page solution
 
-![Design preview for the Tip calculator app coding challenge](./preview.jpg)
+![](./preview.jpg)
 
 This is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
