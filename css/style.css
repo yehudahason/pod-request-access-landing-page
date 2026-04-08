@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Mobile First */
@@ -52,8 +53,7 @@ body {
   gap: 100px;
   flex-direction: column;
   padding: 36px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .logo {
@@ -148,6 +148,59 @@ form .input {
   max-width: 65px;
 }
 
+.attribution {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+
+  color: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+.attribution a {
+  margin: 0 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(230, 82, 28);
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.attribution a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Separator dot */
+.separator {
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+/* Year flicker effect */
+.year {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  display: inline-block;
+  animation: flicker 1s step-end infinite;
+  color: rgb(219, 89, 42);
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (min-width: 768px) {
   body {
     background-color: var(--blue-950);
