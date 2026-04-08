@@ -149,6 +149,7 @@ form .input {
 }
 
 .attribution {
+  background: rgba(18, 23, 37, 0.8);
   width: 100%;
   font-size: 0.9rem;
   text-align: center;
