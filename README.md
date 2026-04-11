@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://yehudahason.github.io/pod-request-access-landing-page/)
+- My solution at : [GitHub Pages](https://yehudahason.github.io/pod-request-access-landing-page/)
 
 ### Built with
 
