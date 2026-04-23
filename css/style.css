@@ -33,20 +33,26 @@ html {
 
 body {
   background: url("../assets/mobile/image-host.jpg") center / cover no-repeat;
-  /* background-size: 100% 100%; */
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+html,
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 /* Mobile First */
 
 .main {
   background: rgba(18, 23, 37, 0.8);
-  min-height: 100vh;
   width: 100%;
+  min-height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +113,6 @@ form .input {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 26px;
-  background-color: var(--blue-900);
 }
 
 .input input {
@@ -171,6 +176,7 @@ input:-webkit-autofill:active {
 .attribution {
   background: rgba(18, 23, 37, 0.8);
   width: 100%;
+  height: auto;
   font-size: 0.9rem;
   text-align: center;
   padding: 1rem;
