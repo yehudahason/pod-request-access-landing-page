@@ -107,6 +107,7 @@ form .input {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 26px;
+  background-color: var(--blue-900);
 }
 
 .input input {
@@ -114,9 +115,27 @@ form .input {
   height: 44px;
   border-radius: 26px;
   padding: 5px 28px;
-  background-color: var(--blue-900);
   border: none;
   color: var(--white);
+  background-color: var(--blue-900);
+  font-size: 1.1rem;
+  outline: none;
+}
+.input input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* This ensures the cursor remains visible and white */
+  caret-color: var(--white) !important;
+
+  -webkit-box-shadow: 0 0 0 1000px var(--blue-900) inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+
+  transition: background-color 5000s ease-in-out 0s;
 }
 .input .btn {
   height: 44px;
@@ -133,6 +152,7 @@ form .input {
   outline: none;
   border: 2px solid red;
 }
+
 .icons {
   width: clamp(280px, 90vw, 400px);
 
@@ -282,6 +302,7 @@ form .input {
     height: 50px;
     border: none;
     border-radius: 30px;
+    overflow: hidden;
   }
   .input.active input {
     border: none;
@@ -289,9 +310,6 @@ form .input {
 
   .input.active {
     border: 2px solid red;
-  }
-  .input input:focus {
-    outline: none;
   }
   .input .btn {
     width: 38%;

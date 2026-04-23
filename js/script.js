@@ -18,8 +18,8 @@ form.addEventListener("submit", (e) => {
     alertState(true);
   } else {
     alertState(false);
-    toast.innerText = "OK!";
-    toast.style.color = "green";
+    toast.innerText = "Thanks! We'll be in touch soon.";
+    toast.style.color = "#54e6af";
   }
 });
 
