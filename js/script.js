@@ -1,6 +1,6 @@
 const form = document.getElementById("accessForm");
 const emailInput = document.getElementById("email");
-const toast = document.getElementById("toast");
+const message = document.getElementById("message");
 const input = document.querySelector(".input");
 
 form.addEventListener("submit", (e) => {
@@ -9,17 +9,17 @@ form.addEventListener("submit", (e) => {
   let emailValue = emailInput.value;
   emailValue = emailValue.trim();
   if (emailValue === "") {
-    toast.innerText = "Oops! Please add your email";
-    toast.style.color = "red";
+    message.innerText = "Oops! Please add your email";
+    message.style.color = "red";
     alertState(true);
   } else if (!emailIsValid(emailValue)) {
-    toast.innerText = "Oops! Please check your email";
-    toast.style.color = "red";
+    message.innerText = "Oops! Please check your email";
+    message.style.color = "red";
     alertState(true);
   } else {
     alertState(false);
-    toast.innerText = "Thanks! We'll be in touch soon.";
-    toast.style.color = "#54e6af";
+    message.innerText = "Thanks! We'll be in touch soon.";
+    message.style.color = "#54e6af";
   }
 });
 

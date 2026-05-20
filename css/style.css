@@ -109,7 +109,7 @@ h1 span {
   color: var(--blue-300);
 }
 
-#toast {
+#message {
   margin-top: -28px;
   font: var(--text4);
   color: red;
@@ -335,7 +335,7 @@ input:-webkit-autofill:active {
     border-radius: 30px;
   }
 
-  #toast {
+  #message {
     margin: -89px auto 0 25px;
     font: var(--text4);
     color: red;
